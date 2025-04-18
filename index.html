@@ -55,14 +55,18 @@
       font-weight: bold;
     }
     
-    .party-hopper{
-        align-items:center;
-        position:absolute;
-        float:left;
-        width:70px;
-        left:7em;
-        top:1em;
-        z-index:1;
+.title-with-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* space between img and h1 */
+  margin-bottom: 1em;
+}
+
+.party-hopper {
+  width: 50px;
+  height: auto;
+}
         
     }
 
@@ -73,18 +77,20 @@
   </style>
 </head>
 <body>
-  <div class="invite-card">
-    <h1>You're Invited!</h1>
+<div class="invite-card">
+  <div class="title-with-image">
     <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/seasonal/hopper-partying.png" class="party-hopper">
-    <p>Join us for an unforgettable evening of fun and celebration.</p>
-    
-    <div class="event-details">
-      <strong>What:</strong> declan's birthday Party<br/>
-      <strong>When:</strong> july 10th 2025 - 7:00 PM<br/>
-      <strong>Where: Xyz Golf course</strong> 
-    </div>
-
-    <a class="rsvp-btn" href="#">RSVP Now</a>
+    <h1>You're Invited!</h1>
   </div>
+  <p>Join us for an unforgettable evening of fun and celebration.</p>
+  
+  <div class="event-details">
+    <strong>What:</strong> Declan's Birthday Party<br/>
+    <strong>When:</strong> July 10th 2025 - 7:00 PM<br/>
+    <strong>Where:</strong> XYZ Golf Course
+  </div>
+
+  <a class="rsvp-btn" href="#">RSVP Now</a>
+</div>
 </body>
 </html>
