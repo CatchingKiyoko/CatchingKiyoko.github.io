@@ -1,21 +1,88 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Project: Event invite</title>
-        <style>
-            
-        </style>
-    </head>
-    <body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>You're Invited!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .invite-card {
+      background: white;
+      border-radius: 16px;
+      padding: 40px;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .invite-card h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2em;
+      margin-bottom: 0.5em;
+      color: #333;
+    }
+
+    .invite-card p {
+      color: #555;
+      margin-bottom: 1em;
+    }
+
+    .event-details {
+      margin: 20px 0;
+      background: #f0f0f0;
+      border-radius: 10px;
+      padding: 15px;
+      color: #333;
+    }
+
+    .rsvp-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #3b82f6;
+      color: white;
+      font-style:italic;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    
+    .party-hopper{
+        position:absolute;
+        width:80px;
+        left:60px;
+        top:10px;
+        z-index:1;
         
-        <h1>You're invited!</h1>
-        <h2>To something!</h2>
-        
-        <p>The details:</p>
-        <ul>
-            <li></li>
-        </ul>
-        
-    </body>
+    }
+
+    .rsvp-btn:hover {
+      background: #2563eb;
+      
+    }
+  </style>
+</head>
+<body>
+<img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/seasonal/hopper-partying.png" class="party-hopper">
+    <div class="invite-card">
+    <h1>You're Invited!</h1>
+    <p>Join us for an unforgettable evening of fun and celebration.</p>
+    
+    <div class="event-details">
+      <strong>What:</strong> declan's birthday Party<br/>
+      <strong>When:</strong> july 10th 2025 - 7:00 PM<br/>
+      <strong>Where: Xyz Golf course</strong> 
+    </div>
+
+    <a class="rsvp-btn" href="#">RSVP Now</a>
+  </div>
+</body>
 </html>
